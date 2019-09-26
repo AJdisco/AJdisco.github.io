@@ -2,12 +2,6 @@
   background-image: url(https://images8.alphacoders.com/862/thumb-1920-862300.jpg);
   background-size: cover;
 }
-.theme-dark{
-    --channels-default: royalblue;
-    --interactive-active: red;
-    --text-normal: #0099dd;
-    --interactive-muted: green;
-}
 .theme-dark .layer-3QrUeG,
 .theme-dark .layers-3iHuyZ {
   background: rgba(0, 0, 0, 0.65);
@@ -60,17 +54,4 @@
 }
 ::-webkit-scrollbar-thumb {
     border-color: transparent !important;
-}
-/**Unread marker**/
-.item-2hkk8m{
-    background-color: red;
-}
-/**Selected channel**/
-.modeSelected-1zApJ_:hover{
-    color: white;
-}
-/**Bigger emojis in sentences**/
-img.emoji:not(.jumboable) {
-    height: 64px !important;
-    width: auto !important;
 }
