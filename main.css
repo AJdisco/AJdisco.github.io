@@ -1,0 +1,76 @@
+#app-mount .app-2rEoOp {
+  background-image: url(https://images8.alphacoders.com/862/thumb-1920-862300.jpg);
+  background-size: cover;
+}
+.theme-dark{
+    --channels-default: royalblue;
+    --interactive-active: red;
+    --text-normal: #0099dd;
+    --interactive-muted: green;
+}
+.theme-dark .layer-3QrUeG,
+.theme-dark .layers-3iHuyZ {
+  background: rgba(0, 0, 0, 0.65);
+}
+.theme-dark .typing-2GQL18,
+.theme-dark .messagesWrapper-3lZDfY,
+.container-PNkimc,
+.channels-Ie2l6A,
+.theme-dark .wrapper-1Rf91z,
+.container-2lgZY8,
+.theme-dark .chat-3bRxxu,
+.theme-dark .chat-3bRxxu form,
+.theme-dark .content-yTz4x3,
+.theme-dark .sidebarRegion-VFTUkN,
+.theme-dark .contentRegion-3nDuYy,
+.theme-dark .standardSidebarView-3F1I7i,
+.theme-dark .container-3gCOGc,
+.theme-dark .applicationStore-1pNvnv,
+.theme-dark .gameLibrary-TTDw4Y,
+.theme-dark .activityFeed-1C0EmJ,
+.theme-dark .root-1BQpZw,
+.membersWrap-2h-GB4,
+#app-mount .panels-j1Uci_,
+ .privateChannels-1nO12o,
+ .members-1998pB,
+ .messages-3amgkR,
+ .sidebar-2K8pFh,
+ .scroller-2TZvBN,
+ .scroller-1JbKMe,
+ .contentRegionScroller-26nc1e,
+ .sidebarRegionScroller-3MXcoP,
+ .friendsEmpty-1KQXin
+ {
+  background-color: transparent;
+}
+/**chatbar thing**/
+.inner-zqa7da{
+    background-color: rgba(0,0,0,0.80);
+}
+.theme-dark .container-1r6BKw,
+.membersWrap-2h-GB4{
+  background: transparent;
+  box-shadow: none;
+  color: white;
+}
+/** scrollbar **/
+::-webkit-scrollbar-track-piece {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+    border-color: transparent !important;
+}
+/**Unread marker**/
+.item-2hkk8m{
+    background-color: red;
+}
+/**Selected channel**/
+.modeSelected-1zApJ_:hover{
+    color: white;
+}
+/**Bigger emojis in sentences**/
+img.emoji:not(.jumboable) {
+    height: 64px !important;
+    width: auto !important;
+}
