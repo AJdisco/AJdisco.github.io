@@ -55,3 +55,8 @@
 ::-webkit-scrollbar-thumb {
     border-color: transparent !important;
 }
+/**Weird content thing**/
+.children-19S4PO:after{
+height: 0px;
+width: 0px;
+}
