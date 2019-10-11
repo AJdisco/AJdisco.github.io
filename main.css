@@ -15,7 +15,8 @@
     .scroller-9moviB,
     .scroller-2zSykH,
     .scroller-1JpcIc,
-    .theme-dark .root-1BQpZw
+    .theme-dark .root-1BQpZw,
+    .bg-h5JY_x
     {
       background: rgba(0, 0, 0, 0) !important;
         --background-primary: rgba(0, 0, 0, 0) !important;
@@ -41,4 +42,9 @@
 }
 ::-webkit-scrollbar-thumb {
     border-color: transparent !important;
+}
+/**Weird content thing**/
+.children-19S4PO:after{
+height: 0px;
+width: 0px;
 }
