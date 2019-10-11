@@ -39,9 +39,11 @@
  .friendsTable-133bsv .friendsTableBody-1ZhKif,
  .bg-h5JY_x
  {
-  background: rgba(0, 0, 0, 0)
-  background-color: transparent;
-  --background-tertiary: rgba(0, 0, 0, 0) !important;
+   background: rgba(0, 0, 0, 0) !important;
+   --background-primary: rgba(0, 0, 0, 0) !important;
+   --background-secondary: rgba(0, 0, 0, 0) !important;
+   --background-tertiary: rgba(0, 0, 0, 0) !important;
+   --deprecated-panel-background: rgba(0, 0, 0, 0) !important;
 }
 /**chatbar thing**/
 .inner-zqa7da{
