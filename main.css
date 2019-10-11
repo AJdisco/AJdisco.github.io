@@ -1,6 +1,7 @@
 #app-mount .app-2rEoOp {
   background-image: url(https://images7.alphacoders.com/997/997376.png);
-  background-size: cover;
+  width: 1920px;
+  height: 1080px;
 }
 .theme-dark .layer-3QrUeG,
 .theme-dark .layers-3iHuyZ {
@@ -36,14 +37,9 @@
  .sidebarRegionScroller-3MXcoP,
  .friendsEmpty-1KQXin,
  .scroller-305q3I,
- .friendsTable-133bsv .friendsTableBody-1ZhKif,
- .bg-h5JY_x
+ .friendsTable-133bsv .friendsTableBody-1ZhKif
  {
-   background: rgba(0, 0, 0, 0) !important;
-   --background-primary: transparent;
-   --background-secondary: transparent;
-   --background-tertiary: transparent;
-   --deprecated-panel-background: transparent;
+  background-color: transparent;
 }
 /**chatbar thing**/
 .inner-zqa7da{
