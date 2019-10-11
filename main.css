@@ -40,10 +40,10 @@
  .bg-h5JY_x
  {
    background: rgba(0, 0, 0, 0) !important;
-   --background-primary: rgba(0, 0, 0, 0) !important;
-   --background-secondary: rgba(0, 0, 0, 0) !important;
-   --background-tertiary: rgba(0, 0, 0, 0) !important;
-   --deprecated-panel-background: rgba(0, 0, 0, 0) !important;
+   --background-primary: transparent;
+   --background-secondary: transparent;
+   --background-tertiary: transparent;
+   --deprecated-panel-background: transparent;
 }
 /**chatbar thing**/
 .inner-zqa7da{
