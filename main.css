@@ -38,6 +38,7 @@
  .scroller-305q3I,
  .friendsTable-133bsv .friendsTableBody-1ZhKif
  {
+  background: rgba(0, 0, 0, 0)
   background-color: transparent;
   --background-tertiary: rgba(0, 0, 0, 0) !important;
 }
