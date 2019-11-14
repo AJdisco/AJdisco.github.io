@@ -48,3 +48,8 @@
 height: 0px;
 width: 0px;
 }
+/**Embed backgrounds**/
+.embedFull-2tM8-- {
+    background-color: rgba(47, 49, 54, 0.3);
+    border-left: 4px solid rgb(0, 132, 180,1)
+}
