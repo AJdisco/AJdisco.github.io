@@ -16,7 +16,8 @@
     .scroller-2zSykH,
     .scroller-1JpcIc,
     .theme-dark .root-1BQpZw,
-    .bg-h5JY_x
+    .bg-h5JY_x,
+    .scrollableContainer-38zsVD
     {
       background: rgba(0, 0, 0, 0) !important;
         --background-primary: rgba(0, 0, 0, 0) !important;
@@ -26,7 +27,7 @@
     }
 
 /**chatbar thing**/
-.inner-zqa7da, .scrollableContainer-38zsVD{
+.inner-zqa7da{
     background-color: rgba(0,0,0,0.80);
 }
 .theme-dark .container-1r6BKw,
