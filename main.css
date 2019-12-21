@@ -31,6 +31,10 @@
 .inner-zqa7da, .scrollableContainer-2NUZem{
     background-color: rgba(0,0,0,0.80);
 }
+.scrollableContainer-2NUZem{
+    background-color: transparent;
+}
+
 .theme-dark .container-1r6BKw,
 .membersWrap-2h-GB4{
   background: transparent;
