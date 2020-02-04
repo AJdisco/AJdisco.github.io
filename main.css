@@ -28,6 +28,7 @@
         --background-secondary: rgba(0, 0, 0, 0) !important;
         --background-tertiary: rgba(0, 0, 0, 0) !important;
         --deprecated-panel-background: rgba(0, 0, 0, 0) !important;
+        --background-secondary-alt: rgba(0,0,0,0) !important;
     }
 
 /**chatbar thing**/
