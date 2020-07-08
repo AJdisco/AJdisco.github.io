@@ -63,3 +63,13 @@ width: 0px;
     background-color: rgba(47, 49, 54, 0.3);
     border-left: 4px solid rgb(0, 132, 180,1)
 }
+/**button fixes**/
+.circleIconButton-jET_ig, .guildsError-b7zR5H,
+.quickswitcher-3JagVE, .root-SR8cQa, .emojiPicker-3m1S-j,
+.childWrapper-anI2G9, .messagesPopoutWrap-1MQ1bW{
+    background-color: #36393B;
+}
+/**Markup fix**/
+.markup-2BOw-j code, .wrapper-35wsBm, .container-enaOkj, .drawerSizingWrapper-17Mss4{
+    background-color: #23272A;
+}
