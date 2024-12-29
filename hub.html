@@ -30,55 +30,55 @@
     <script src="dossiers.js"></script>
     <script src="dossiers2.js"></script>
     <script>
-        // JavaScript to toggle the lists and arrow positioning
-        const arrow = document.querySelector('.arrow');
-        const list1 = document.querySelector('.list-1');
-        const list2 = document.querySelector('.list-2');
+       // JavaScript to toggle the lists and arrow positioning
+const arrow = document.querySelector('.arrow');
+const list1 = document.querySelector('.list-1');
+const list2 = document.querySelector('.list-2');
 
-        // Add event listener to the arrow
-        arrow.addEventListener('click', () => {
-            // Toggle between the lists
-            list1.classList.toggle('active');
-            list2.classList.toggle('active');
-            
-            // Change the arrow direction and position
-            if (list1.classList.contains('active')) {
-                arrow.innerHTML = '&#8594;'; // Right arrow for the first list
-                arrow.classList.remove('left');
-                arrow.classList.add('right');
-            } else {
-                arrow.innerHTML = '&#8592;'; // Left arrow for the second list
-                arrow.classList.remove('right');
-                arrow.classList.add('left');
-            }
+// Add event listener to the arrow
+arrow.addEventListener('click', () => {
+    // Toggle between the lists
+    list1.classList.toggle('active');
+    list2.classList.toggle('active');
+    
+    // Change the arrow direction and position
+    if (list1.classList.contains('active')) {
+        arrow.innerHTML = '&#8594;'; // Right arrow for the first list
+        arrow.classList.remove('left');
+        arrow.classList.add('right');
+    } else {
+        arrow.innerHTML = '&#8592;'; // Left arrow for the second list
+        arrow.classList.remove('right');
+        arrow.classList.add('left');
+    }
+});
+
+// Log Out Button - Redirect to index.html
+const logoutButton = document.getElementById('logoutButton');
+logoutButton.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Redirect to index.html
+});
+
+// JavaScript to handle hover effect
+document.addEventListener('DOMContentLoaded', () => {
+    // Add event listener to each dynamically generated link
+    document.querySelectorAll('.access-denied-link').forEach(link => {
+        link.addEventListener('mouseover', function() {
+            // Change the text when hovering
+            this.textContent = 'Access Denied';
+            this.classList.add('access-denied');
         });
 
-        // Log Out Button - Redirect to index.html
-        const logoutButton = document.getElementById('logoutButton');
-        logoutButton.addEventListener('click', () => {
-            window.location.href = 'index.html'; // Redirect to index.html
+        link.addEventListener('mouseout', function() {
+            // Reset the text when hover ends
+            this.textContent = this.getAttribute('data-original-text');
+            this.classList.remove('access-denied');
         });
 
-        // JavaScript to handle hover effect
-        document.addEventListener('DOMContentLoaded', () => {
-            // Add event listener to each dynamically generated link
-            document.querySelectorAll('.access-denied-link').forEach(link => {
-                link.addEventListener('mouseover', function() {
-                    // Change the text when hovering
-                    this.textContent = 'Access Denied';
-                    this.classList.add('access-denied');
-                });
-
-                link.addEventListener('mouseout', function() {
-                    // Reset the text when hover ends
-                    this.textContent = this.getAttribute('data-original-text');
-                    this.classList.remove('access-denied');
-                });
-
-                // Save the original text for later restoration
-                link.setAttribute('data-original-text', link.textContent);
-            });
-        });
+        // Save the original text for later restoration
+        link.setAttribute('data-original-text', link.textContent);
+    });
+});
     </script>
 </body>
 </html>
