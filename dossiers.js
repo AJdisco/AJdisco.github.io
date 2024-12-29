@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchDossierFiles() {
         // Simulated example: Fetching the list of files
         // In a real scenario, you might fetch from a server or local directory
-        const files = ['file1.txt', 'file2.txt', 'file3.txt'];
+        const files = ['The lawbreaker', 'The Obstinate', 'The Epitath', 'The Illusion', 'The Baker', 'The Future', 'The Protectorate', 'The Misdirected', 'The Iconoclast', 'The Sinnerman', 'The Dessert', 'The Tiebreaker'];
 
         const dossierList = document.querySelector('.dossier-list');
         const ul = document.createElement('ul');
