@@ -126,3 +126,21 @@ body {
           background-color: #555;
  }
 
+ /* Default link style */
+        .access-denied-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        .access-denied-link:hover {
+            color: red;
+            text-decoration: none; /* Removes underline on hover */
+        }
+
+        /* When the "Access Denied" state is triggered */
+        .access-denied-link.access-denied {
+            color: grey;
+            cursor: not-allowed;
+        }
