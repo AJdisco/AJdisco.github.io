@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
          // Create a heading for "Active Council Members"
     const heading = document.createElement('h2');
     heading.textContent = 'Active Council Members';
-    dossierList1.appendChild(heading); // Add the heading at the top of the lists
+    dossierList.appendChild(heading); // Add the heading at the top of the lists
 
         files.forEach((file, index) => {
             console.log('Index:', index);  // Check if the index is defined here
