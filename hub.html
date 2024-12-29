@@ -20,8 +20,13 @@
             <div class="dossier-list list-2"></div>
 
             <div class="arrow">&#8594;</div> <!-- Arrow for toggling -->
+            
+               <!-- Log Out Button -->
+            <button id="logoutButton" class="logout-btn">Log Out</button>
+        </div>
         </div>
     </div>
+    
     <script src="dossiers.js"></script>
     <script src="dossiers2.js"></script>
     <script>
@@ -43,7 +48,11 @@
                 arrow.innerHTML = '&#8592;'; // Left arrow for the second list
             }
         });
-
+// Log Out Button - Redirect to index.html
+        const logoutButton = document.getElementById('logoutButton');
+        logoutButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; // Redirect to index.html
+        });
         // JavaScript to handle hover effect
         document.addEventListener('DOMContentLoaded', () => {
             // Add event listener to each dynamically generated link
