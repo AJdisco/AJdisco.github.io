@@ -35,8 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
             a.textContent = file.name;
             a.href = file.url;
             a.target = '_blank';
-            a.classList.add('access-denied-link');  // Add class for hover effect
-            
+
+            // Add class for hover effect, only for invalid links
+            if (file.name === 'The Lawbreaker') {
+                // If it's a valid link, no hover effect
+                a.classList.add('valid-link'); 
+            } else {
+                a.classList.add('access-denied-link'); // For "access denied" effect
+            }
+
             li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
             
             li.appendChild(a);
