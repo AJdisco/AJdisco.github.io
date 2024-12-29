@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ul.appendChild(li);
         });
 
-        dossierList2.appendChild(ul2);
+        dossierList2.appendChild(ul);
     }
 
     fetchDossierFiles();
