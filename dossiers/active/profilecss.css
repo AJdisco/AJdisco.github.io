@@ -13,9 +13,26 @@ body {
 /* Header */
 h1 {
   text-align: center;
-  color: #ffcc00;
+  color: #8B0000; /* Dark red */
   text-transform: uppercase;
   margin-bottom: 20px;
+  animation: pulse 1.5s infinite ease-in-out; /* Apply pulsing effect */
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+    color: #8B0000; /* Dark red */
+    text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000, 0 0 15px #8B0000;
+  }
+  50% {
+    color: #B22222; /* Lighter dark red */
+    text-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 30px #B22222;
+  }
+  100% {
+    color: #8B0000; /* Dark red */
+    text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000, 0 0 15px #8B0000;
+  }
 }
 
 /* Personnel File Container */
@@ -76,4 +93,34 @@ h1 {
 
 .key-value {
   color: #f0f0f0;
+}
+
+/* Warning Text */
+.warning-text {
+  text-align: center;
+  font-size: 24px;
+  color: #ff0000;
+  animation: fade 3s infinite; /* Fade in and out */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.warning-subtext {
+  text-align: center;
+  font-size: 16px;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+/* Fading Animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
