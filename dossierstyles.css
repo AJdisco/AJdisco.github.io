@@ -66,8 +66,6 @@ body {
     text-align: center;
     width: 300px;
 }
-}
-
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
