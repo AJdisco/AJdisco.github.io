@@ -52,12 +52,12 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     padding: 20px;
-    position: relative;
+    position: relative; /* Make content the reference for absolute positioning */
 }
 
 .dossier-list {
@@ -77,19 +77,20 @@ body {
 .arrow {
     cursor: pointer;
     font-size: 24px;
-    margin-top: 20px;
-    position: absolute; /* Position it absolutely within the content */
-    z-index: 1; /* Ensure it's on top */
+    position: absolute; /* Position the arrow outside the lists */
+    z-index: 1; /* Ensure it stays above the lists */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
 }
 
-/* Position arrow for list-1 */
+/* Position arrow for list-1 (on the right side) */
 .arrow.right {
-    right: -30px; /* Position the arrow on the right side of list-1 */
+    right: -30px;
 }
 
-/* Position arrow for list-2 */
+/* Position arrow for list-2 (on the left side) */
 .arrow.left {
-    left: -30px; /* Position the arrow on the left side of list-2 */
+    left: -30px;
 }
 
 /* Fade-in animation */
@@ -169,14 +170,4 @@ body {
 /* Hover effect for the Log Out button */
 .logout-btn:hover {
     background-color: #d32f2f;
-}
-
-/* Log Out Button Positioning at the bottom */
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: flex-start;
-    padding: 20px;
-    position: relative;
 }
