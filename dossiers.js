@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const dossierList = document.querySelector('.dossier-list');
         const ul = document.createElement('ul');
 
+         // Create a heading for "Active Council Members"
+    const heading = document.createElement('h2');
+    heading.textContent = 'Active Council Members';
+    dossierList1.appendChild(heading); // Add the heading at the top of the list
+
         files.forEach((file, index) => {
             console.log('Index:', index);  // Check if the index is defined here
             const li = document.createElement('li');
