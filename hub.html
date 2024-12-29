@@ -15,11 +15,34 @@
             <img src="O5_Council.png" alt="GOC Logo" class="logo">
         </nav>
         <div class="content">
-            <div class="dossier-list">
-                <!-- Dossier list will be populated by JavaScript -->
-            </div>
+            <!-- Placeholder for the lists to be populated by JavaScript -->
+            <div class="dossier-list list-1 active"></div>
+            <div class="dossier-list list-2"></div>
+
+            <div class="arrow">&#8594;</div> <!-- Arrow for toggling -->
         </div>
     </div>
     <script src="dossiers.js"></script>
+    <script src="dossiers2.js"></script>
+    <script>
+        // JavaScript to toggle the lists
+        const arrow = document.querySelector('.arrow');
+        const list1 = document.querySelector('.list-1');
+        const list2 = document.querySelector('.list-2');
+
+        // Add event listener to the arrow
+        arrow.addEventListener('click', () => {
+            // Toggle between the lists
+            list1.classList.toggle('active');
+            list2.classList.toggle('active');
+            
+            // Optionally, change the arrow direction
+            if (list1.classList.contains('active')) {
+                arrow.innerHTML = '&#8594;'; // Right arrow for the first list
+            } else {
+                arrow.innerHTML = '&#8592;'; // Left arrow for the second list
+            }
+        });
+    </script>
 </body>
 </html>
