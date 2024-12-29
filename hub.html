@@ -21,7 +21,7 @@
 
             <!-- Arrow for toggling -->
             <div class="arrow">&#8594;</div> 
-            
+
             <!-- Log Out Button -->
             <button id="logoutButton" class="logout-btn">Log Out</button>
         </div>
@@ -30,7 +30,7 @@
     <script src="dossiers.js"></script>
     <script src="dossiers2.js"></script>
     <script>
-        // JavaScript to toggle the lists
+        // JavaScript to toggle the lists and arrow positioning
         const arrow = document.querySelector('.arrow');
         const list1 = document.querySelector('.list-1');
         const list2 = document.querySelector('.list-2');
@@ -41,11 +41,15 @@
             list1.classList.toggle('active');
             list2.classList.toggle('active');
             
-            // Optionally, change the arrow direction
+            // Change the arrow direction and position
             if (list1.classList.contains('active')) {
                 arrow.innerHTML = '&#8594;'; // Right arrow for the first list
+                arrow.classList.remove('left');
+                arrow.classList.add('right');
             } else {
                 arrow.innerHTML = '&#8592;'; // Left arrow for the second list
+                arrow.classList.remove('right');
+                arrow.classList.add('left');
             }
         });
 
