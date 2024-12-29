@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Data for Potential candidates and Deceased
     const potentialCandidates = [
         { name: 'The Cosmos', url: 'https://ajdisco.github.io/Cosmos' },
-        { name: 'The Unknwon', url: 'https://ajdisco.github.io/Unknown' }
+        { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' }
     ];
 
     const deceased = [
