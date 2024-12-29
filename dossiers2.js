@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         a.textContent = candidate.name;
         a.href = candidate.url;
         a.target = '_blank';
+        a.classList.add('access-denied-link'); // Add class for hover effect
         li.appendChild(a);
         potentialList.appendChild(li);
     });
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         a.textContent = person.name;
         a.href = person.url;
         a.target = '_blank';
+        a.classList.add('access-denied-link'); // Add class for hover effect
         li.appendChild(a);
         deceasedList.appendChild(li);
     });
@@ -59,4 +61,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Append the sections to the main list container
     dossierList2.appendChild(potentialSection);
     dossierList2.appendChild(deceasedSection);
+
+    // Add event listener for hover effect on links
+    document.querySelectorAll('.access-denied-link').forEach(link => {
+        link.addEventListener('mouseover', function() {
+            // Change the text when hovering
+            this.textContent = 'Access Denied';
+            this.classList.add('access-denied');
+        });
+
+        link.addEventListener('mouseout', function() {
+            // Reset the text when hover ends
+            this.textContent = this.getAttribute('data-original-text');
+            this.classList.remove('access-denied');
+        });
+
+        // Save the original text for later restoration
+        link.setAttribute('data-original-text', link.textContent);
+    });
 });
