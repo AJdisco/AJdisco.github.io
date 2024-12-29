@@ -89,4 +89,18 @@ body {
     animation: fadeIn 0.5s forwards; /* Animation lasts 0.5 seconds */
 }
 
+.dossier-list a {
+    text-decoration: none;  /* Remove underline */
+    color: white;           /* Set the text color to white (or whatever color you want) */
+}
+
+/* Target odd items (1st, 3rd, 5th, etc.) and set their color to red */
+.dossier-list ul li:nth-child(odd) a {
+    background-color: red;
+}
+
+/* Target even items (2nd, 4th, 6th, etc.) and set their color to dark red */
+.dossier-list ul li:nth-child(even) a {
+    background-color: darkred;
+}
 
