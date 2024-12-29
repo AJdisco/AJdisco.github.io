@@ -4,6 +4,9 @@ body {
   background-color: #1a1a1a;
   color: #f0f0f0;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Header */
@@ -19,8 +22,22 @@ h1 {
   background-color: #2d2d2d;
   border-radius: 8px;
   padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image Container */
+.personnel-image {
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.personnel-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Table for File Information */
