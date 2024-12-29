@@ -56,7 +56,6 @@ body {
     height: 100%;
     width: 100%;
     padding: 20px;
-    position: relative; /* Make content the reference for absolute positioning */
 }
 
 .dossier-list {
@@ -71,37 +70,6 @@ body {
 
 .dossier-list.active {
     display: block;
-}
-
-.arrow {
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute; /* Position the arrow outside the lists */
-    z-index: 1; /* Ensure it stays above the lists */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
-}
-
-/* Position arrow for list-1 (on the right side) */
-.arrow.right {
-    right: -30px;
-}
-
-/* Position arrow for list-2 (on the left side) */
-.arrow.left {
-    left: -30px;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .dossier-list ul {
@@ -135,7 +103,6 @@ body {
     background-color: #555;
 }
 
-/* Default link style */
 .access-denied-link {
     color: blue;
     text-decoration: underline;
@@ -147,26 +114,34 @@ body {
     text-decoration: none;
 }
 
-/* When the "Access Denied" state is triggered */
 .access-denied-link.access-denied {
     color: grey;
     cursor: not-allowed;
 }
 
-/* Log Out Button Styles */
 .logout-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #f44336;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    align-self: center;
 }
 
-/* Hover effect for the Log Out button */
 .logout-btn:hover {
-    background-color: #d32f2f;
+    background-color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
