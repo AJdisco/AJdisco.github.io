@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulated example: Fetching the list of files
         // In a real scenario, you might fetch from a server or local directory
    const files = [
-            { name: 'The lawbreaker.txt', url: 'https://ajdisco.github.io/lawbreaker' },
-            { name: 'The Obstinate.txt', url: 'https://ajdisco.github.io/obstinate' },
-            { name: 'The Epitath.txt', url: 'https://ajdisco.github.io/epitaph' },
-            { name: 'The Illusion.txt', url: 'https://ajdisco.github.io/illusion' },
-            { name: 'The Baker.txt', url: 'https://ajdisco.github.io/baker' },
-            { name: 'The Future.txt', url: 'https://ajdisco.github.io/future' },
-            { name: 'The Protectorate.txt', url: 'https://ajdisco.github.io/protectorate' },
-            { name: 'The Misdirected.txt', url: 'https://ajdisco.github.io/misdirected' },
-            { name: 'The Iconoclast.txt', url: 'https://ajdisco.github.io/iconoclast' },
-            { name: 'The Sinnerman.txt', url: 'https://ajdisco.github.io/sinnerman' },
-            { name: 'The Dessert.txt', url: 'https://ajdisco.github.io/dessert' },
-            { name: 'The Tiebreaker.txt', url: 'https://ajdisco.github.io/tiebreaker' }
+            { name: 'The lawbreaker', url: 'https://ajdisco.github.io/lawbreaker' },
+            { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
+            { name: 'The Epitath', url: 'https://ajdisco.github.io/epitaph' },
+            { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
+            { name: 'The Baker', url: 'https://ajdisco.github.io/baker' },
+            { name: 'The Future', url: 'https://ajdisco.github.io/future' },
+            { name: 'The Protectorate', url: 'https://ajdisco.github.io/protectorate' },
+            { name: 'The Misdirected', url: 'https://ajdisco.github.io/misdirected' },
+            { name: 'The Iconoclast', url: 'https://ajdisco.github.io/iconoclast' },
+            { name: 'The Sinnerman', url: 'https://ajdisco.github.io/sinnerman' },
+            { name: 'The Dessert', url: 'https://ajdisco.github.io/dessert' },
+            { name: 'The Tiebreaker', url: 'https://ajdisco.github.io/tiebreaker' }
         ];
         const dossierList = document.querySelector('.dossier-list');
         const ul = document.createElement('ul');
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             a.textContent = file.name;
             a.href = file.url;
+            a.target = '_blank';
 
               li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
             
