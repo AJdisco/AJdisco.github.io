@@ -1,2 +1,2 @@
-# KizunaTerm.github.io
+# AJdisco.github.io
 SCP inspired website
