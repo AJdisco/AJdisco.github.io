@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Align content vertically */
 }
 
 /* Header */
@@ -14,7 +15,7 @@ h1 {
   text-align: center;
   color: #ffcc00;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Personnel File Container */
@@ -22,18 +23,19 @@ h1 {
   background-color: #2d2d2d;
   border-radius: 8px;
   padding: 20px;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: row-reverse; /* Align image to the right */
-  align-items: center; /* Center the content vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: space-between;
 }
 
 /* Image Container */
 .personnel-image {
-  margin-left: 20px;
+  margin-left: 30px;
   border-radius: 8px;
-  height: 150px; /* Same height as the profile content */
-  width: 150px; /* Same width as the profile content */
+  height: 250px; /* Larger height */
+  width: 250px; /* Larger width */
 }
 
 .personnel-image img {
@@ -51,7 +53,7 @@ h1 {
 
 .personnel-file th, .personnel-file td {
   text-align: left;
-  padding: 8px;
+  padding: 10px;
 }
 
 .personnel-file th {
