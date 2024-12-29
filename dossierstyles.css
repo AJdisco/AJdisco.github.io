@@ -86,9 +86,7 @@ body {
 
 .dossier-list li {
     margin: 10px 0;
-    
     /* List item styling with animation */
-.dossier-list li {
     opacity: 0; /* Initially hidden */
     animation: fadeIn 0.5s forwards; /* Animation lasts 0.5 seconds */
 }
