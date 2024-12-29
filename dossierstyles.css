@@ -71,10 +71,11 @@ body {
  .dossier-list.active {
             display: block;
         }
-.arrow {
+        .arrow {
             cursor: pointer;
             font-size: 24px;
             margin-top: 20px;
+            text-align: center;
         }
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -101,6 +102,10 @@ body {
 
 .dossier-list a {
     text-decoration: none;  /* Remove underline */
+                color: white;
+            padding: 5px;
+            background-color: #333;
+            border-radius: 4px;
 }
 
 /* Target odd items (1st, 3rd, 5th, etc.) and set their color to red */
@@ -112,4 +117,12 @@ body {
 .dossier-list ul li:nth-child(even) a {
     color: darkred;
 }
+
+.dossier-list ul li {
+          margin: 10px 0;
+}
+
+ .dossier-list a:hover {
+          background-color: #555;
+ }
 
