@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulated example: Fetching the list of files
         // In a real scenario, you might fetch from a server or local directory
    const files = [
-            { name: 'The lawbreaker', url: 'https://ajdisco.github.io/lawbreaker' },
+            { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
+            { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/lawbreaker' },
             { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
             { name: 'The Epitath', url: 'https://ajdisco.github.io/epitaph' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
@@ -39,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
             li.appendChild(a);
             ul.appendChild(li);
         });
+
+        if (index === 0) {
+            li.style.fontSize = '1.5em'; // Larger font size
+            li.style.fontWeight = 'bold'; // Bold text
+        }
+    });
 
         dossierList.appendChild(ul);
     }
