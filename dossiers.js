@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ul = document.createElement('ul');
 
         files.forEach((file, index) => {
+            console.log('Index:', index);  // Check if the index is defined here
             const li = document.createElement('li');
             const a = document.createElement('a');
             
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             a.href = file.url;
             a.target = '_blank';
 
-              li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
+            li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
             
             li.appendChild(a);
             ul.appendChild(li);
