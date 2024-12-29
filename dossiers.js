@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dossierList = document.querySelector('.dossier-list');
         const ul = document.createElement('ul');
 
-        files.forEach(file => {
+        files.forEach(file, Index) => {
             const li = document.createElement('li');
             const a = document.createElement('a');
             
