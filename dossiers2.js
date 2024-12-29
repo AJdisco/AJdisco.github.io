@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchDossierFiles() {
         // Simulated example: Fetching the list of files
         // In a real scenario, you might fetch from a server or local directory
-   const files = [
+   const files2 = [
             { name: 'The Cosmos', url: 'https://ajdisco.github.io/lawbreaker' },
             { name: 'The Test', url: 'https://ajdisco.github.io/obstinate' },
             { name: 'The Test', url: 'https://ajdisco.github.io/epitaph' },
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'The Test', url: 'https://ajdisco.github.io/dessert' },
             { name: 'The Test', url: 'https://ajdisco.github.io/tiebreaker' }
         ];
-        const dossierList = document.querySelector('.dossier-list');
-        const ul = document.createElement('ul');
+        const dossierList2 = document.querySelector('.dossier-list2');
+        const ul2 = document.createElement('ul');
 
-        files.forEach((file, index) => {
+        files2.forEach((file, index) => {
             console.log('Index:', index);  // Check if the index is defined here
             const li = document.createElement('li');
             const a = document.createElement('a');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ul.appendChild(li);
         });
 
-        dossierList.appendChild(ul);
+        dossierList2.appendChild(ul2);
     }
 
     fetchDossierFiles();
