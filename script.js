@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to auto-fill the form
     function autoFill() {
-        let username = 'UNGOCPinewood';
+        let username = 'O5-Lawbreaker';
         let index = 0;
 
         const usernameInterval = setInterval(() => {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let flashCount = 0;
         const flashInterval = setInterval(() => {
             if (flashCount < 3) {
-                accessGranted.style.backgroundColor = 'green';
+                accessGranted.style.backgroundColor = 'red';
                 setTimeout(() => {
                     accessGranted.style.backgroundColor = '';
                 }, 500);
