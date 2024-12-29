@@ -60,14 +60,6 @@ body {
     position: relative;
 }
 
-/* Ensure the Log Out button is at the bottom */
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Make sure the content area expands to take up the remaining space */
-    justify-content: flex-start; /* Align the content at the top */
-}
-
 .dossier-list {
     display: none;
     background-color: #2e2e2e;
@@ -87,6 +79,7 @@ body {
     font-size: 24px;
     margin-top: 20px;
     text-align: center;
+    z-index: 1; /* Make sure the arrow stays on top of other content */
 }
 
 /* Fade-in animation */
@@ -121,12 +114,10 @@ body {
     border-radius: 4px;
 }
 
-/* Target odd items (1st, 3rd, 5th, etc.) and set their color to red */
 .dossier-list ul li:nth-child(odd) a {
     color: red;
 }
 
-/* Target even items (2nd, 4th, 6th, etc.) and set their color to dark red */
 .dossier-list ul li:nth-child(even) a {
     color: darkred;
 }
@@ -176,7 +167,7 @@ body {
     background-color: #d32f2f; /* Darker red when hovered */
 }
 
-/* Move the Log Out Button to the bottom */
+/* Log Out Button Positioning at the bottom */
 .content {
     display: flex;
     flex-direction: column;
