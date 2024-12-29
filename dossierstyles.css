@@ -79,7 +79,8 @@ body {
     font-size: 24px;
     margin-top: 20px;
     text-align: center;
-    z-index: 1; /* Make sure the arrow stays on top of other content */
+    z-index: 1; /* Make sure the arrow stays on top */
+    margin-bottom: 20px; /* Add some space below the arrow */
 }
 
 /* Fade-in animation */
@@ -101,13 +102,12 @@ body {
 
 .dossier-list li {
     margin: 10px 0;
-    /* List item styling with animation */
-    opacity: 0; /* Initially hidden */
-    animation: fadeIn 0.5s forwards; /* Animation lasts 0.5 seconds */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
 }
 
 .dossier-list a {
-    text-decoration: none;  /* Remove underline */
+    text-decoration: none;
     color: white;
     padding: 5px;
     background-color: #333;
@@ -120,10 +120,6 @@ body {
 
 .dossier-list ul li:nth-child(even) a {
     color: darkred;
-}
-
-.dossier-list ul li {
-    margin: 10px 0;
 }
 
 .dossier-list a:hover {
@@ -140,7 +136,7 @@ body {
 /* Hover effect */
 .access-denied-link:hover {
     color: red;
-    text-decoration: none; /* Removes underline on hover */
+    text-decoration: none;
 }
 
 /* When the "Access Denied" state is triggered */
@@ -153,26 +149,26 @@ body {
 .logout-btn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #f44336; /* Red background */
+    background-color: #f44336;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    align-self: center; /* Center the button horizontally */
+    align-self: center;
 }
 
 /* Hover effect for the Log Out button */
 .logout-btn:hover {
-    background-color: #d32f2f; /* Darker red when hovered */
+    background-color: #d32f2f;
 }
 
 /* Log Out Button Positioning at the bottom */
 .content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Takes remaining space */
-    justify-content: space-between; /* Ensures the button is pushed to the bottom */
+    flex-grow: 1;
+    justify-content: flex-start;
     padding: 20px;
     position: relative;
 }
