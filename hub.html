@@ -43,6 +43,27 @@
                 arrow.innerHTML = '&#8592;'; // Left arrow for the second list
             }
         });
+
+         // Add event listener to each link to check if the page exists
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent actual navigation
+                const url = this.href;
+
+                // Try fetching the URL to see if it's valid
+                fetch(url, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = url; // Navigate to the page if the link is valid
+                        } else {
+                            this.textContent = 'Access Denied'; // Change text if the link is broken
+                        }
+                    })
+                    .catch(error => {
+                        this.textContent = 'Access Denied'; // In case of an error (e.g., network issues)
+                    });
+            });
+        });
     </script>
 </body>
 </html>
