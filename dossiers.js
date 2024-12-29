@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             a.textContent = file.name;
             a.href = file.url;
+
+              li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
             
             li.appendChild(a);
             ul.appendChild(li);
