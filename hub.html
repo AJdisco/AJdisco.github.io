@@ -15,6 +15,10 @@
             <img src="O5_Council.png" alt="GOC Logo" class="logo">
         </nav>
         <div class="content">
+            <!-- Buttons to toggle between the dossier lists -->
+            <button id="toggleList1" class="toggle-btn">Show Dossier List 1</button>
+            <button id="toggleList2" class="toggle-btn">Show Dossier List 2</button>
+
             <!-- Placeholder for the lists to be populated by JavaScript -->
             <div class="dossier-list list-1 active"></div>
             <div class="dossier-list list-2"></div>
@@ -31,6 +35,27 @@
         const logoutButton = document.getElementById('logoutButton');
         logoutButton.addEventListener('click', () => {
             window.location.href = 'index.html'; // Redirect to index.html
+        });
+
+        // Toggle buttons
+        const list1Button = document.getElementById('toggleList1');
+        const list2Button = document.getElementById('toggleList2');
+        const list1 = document.querySelector('.list-1');
+        const list2 = document.querySelector('.list-2');
+
+        // Hide both lists initially
+        list1.style.display = 'block';
+        list2.style.display = 'none';
+
+        // Toggle between the lists
+        list1Button.addEventListener('click', () => {
+            list1.style.display = 'block';
+            list2.style.display = 'none';
+        });
+
+        list2Button.addEventListener('click', () => {
+            list2.style.display = 'block';
+            list1.style.display = 'none';
         });
     </script>
 </body>
