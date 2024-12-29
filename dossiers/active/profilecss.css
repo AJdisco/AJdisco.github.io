@@ -35,7 +35,7 @@ h1 {
   margin-left: 30px;
   border-radius: 8px;
   height: 100%; /* Make the image match the content height */
-  width: 250px; /* Adjust the width */
+  width: 100%; /* Adjust the width */
 }
 
 .personnel-image img {
