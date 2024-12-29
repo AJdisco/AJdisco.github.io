@@ -150,6 +150,15 @@ body {
     }
 }
 
+/* Buttons container for centering */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the buttons */
+    margin-bottom: 20px; /* Add space between buttons and dossier lists */
+}
+
+/* Button styling remains the same */
 .toggle-btn {
     background-color: #2e2e2e;
     color: white;
@@ -158,7 +167,6 @@ body {
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-    margin: 10px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
