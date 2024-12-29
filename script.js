@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let flashCount = 0;
         const flashInterval = setInterval(() => {
             if (flashCount < 3) {
-                accessGranted.style.backgroundColor = 'red';
+                accessGranted.style.backgroundColor = 'darkred';
                 setTimeout(() => {
                     accessGranted.style.backgroundColor = '';
                 }, 500);
