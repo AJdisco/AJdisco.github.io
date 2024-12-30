@@ -70,7 +70,7 @@ body {
 /* Button styling */
 .toggle-btn {
     background-color: #2e2e2e;
-    color: darkred;
+    color: white;
     border: 2px solid #333;
     border-radius: 5px;
     padding: 10px 20px;
@@ -112,16 +112,25 @@ body {
 
 .dossier-list a {
     text-decoration: none;
-    color: red;
+    color: white;
     padding: 5px;
     background-color: #333;
     border-radius: 4px;
 }
+
+.dossier-list ul li:nth-child(odd) a {
+    color: red;
+}
+
+.dossier-list ul li:nth-child(even) a {
+    color: darkred;
+}
+
 .dossier-list a:hover {
     background-color: #555;
 }
 
-/* Access denied link */
+/* Access denied link styling */
 .access-denied-link {
     color: blue;
     text-decoration: underline;
@@ -133,9 +142,11 @@ body {
     text-decoration: none;
 }
 
+/* Non-functional access-denied links - set to black */
 .access-denied-link.access-denied {
     color: black;
-    cursor: none;
+    cursor: not-allowed; /* This ensures the link looks disabled */
+    text-decoration: none; /* Remove underline from disabled links */
 }
 
 /* Log out button styling */
