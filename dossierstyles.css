@@ -70,7 +70,7 @@ body {
 /* Button styling */
 .toggle-btn {
     background-color: #2e2e2e;
-    color: white;
+    color: darkred;
     border: 2px solid #333;
     border-radius: 5px;
     padding: 10px 20px;
