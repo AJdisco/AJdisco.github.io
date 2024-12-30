@@ -144,7 +144,7 @@ body {
 
 .access-denied-link.access-denied {
     color: grey;
-    cursor: not-allowed;
+    cursor: none;
 }
 
 /* Log out button styling */
