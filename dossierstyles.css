@@ -112,20 +112,11 @@ body {
 
 .dossier-list a {
     text-decoration: none;
-    color: white;
+    color: red;
     padding: 5px;
     background-color: #333;
     border-radius: 4px;
 }
-
-.dossier-list ul li:nth-child(odd) a {
-    color: red;
-}
-
-.dossier-list ul li:nth-child(even) a {
-    color: darkred;
-}
-
 .dossier-list a:hover {
     background-color: #555;
 }
@@ -143,7 +134,7 @@ body {
 }
 
 .access-denied-link.access-denied {
-    color: grey;
+    color: black;
     cursor: none;
 }
 
