@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             a.textContent = file.name;
             a.href = file.url;
-            a.target = '_blank';
 
             // Add class for hover effect, only for invalid links
             if (file.name === 'The Lawbreaker') {
