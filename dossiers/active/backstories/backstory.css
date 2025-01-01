@@ -18,11 +18,11 @@
             margin-bottom: 20px;
             animation: pulse 1.5s infinite ease-in-out;
         }
-        .Header h {
+        h2 {
           color: #880000;
           animation: fadeIn 0.5s forwards;
         }
-        .paragraph p {
+        p {
           animation: fadeIn 0.5s forwards;
         }
         @keyframes pulse {
