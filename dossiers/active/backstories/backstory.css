@@ -1,0 +1,150 @@
+        /* General Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            color: #8B0000;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                color: #8B0000;
+                text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000, 0 0 15px #8B0000;
+            }
+            50% {
+                color: #B22222;
+                text-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 30px #B22222;
+            }
+            100% {
+                color: #8B0000;
+                text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000, 0 0 15px #8B0000;
+            }
+        }
+
+        /* Personnel File Container */
+        .personnel-file {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Image Container */
+        .personnel-image {
+            margin-left: 30px;
+            border-radius: 8px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .personnel-image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Table for File Information */
+        .personnel-file table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .personnel-file th, .personnel-file td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .personnel-file th {
+            background-color: #444;
+        }
+
+        .personnel-file tr:nth-child(even) {
+            background-color: #333;
+        }
+
+        .personnel-file tr:hover {
+            background-color: #555;
+        }
+
+        /* Key Labels */
+        .key-label {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .key-value {
+            color: #f0f0f0;
+        }
+
+        /* Warning Text */
+        .warning-text {
+            text-align: center;
+            font-size: 24px;
+            color: #ff0000;
+            animation: fade 3s infinite;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .warning-subtext {
+            text-align: center;
+            font-size: 16px;
+            color: #f0f0f0;
+            margin-top: 10px;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Button Container */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Return Button */
+        .return-button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .return-button:hover {
+            background-color: #ff0000;
+            color: #fff;
+        }
