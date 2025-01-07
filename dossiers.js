@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             a.href = file.url;
 
             // Add class for hover effect, only for invalid links
-            if (file.name === 'The Lawbreaker') {
+            if (file.name === 'The Lawbreaker' || file.name === 'The Epitath') {
                 // If it's a valid link, no hover effect
                 a.classList.add('valid-link'); 
             } else {
