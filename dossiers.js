@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
             { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/active/lawbreaker' },
             { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
-            { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/active/epitaph' },
+            { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/active/Epitaph' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
             { name: 'The Baker', url: 'https://ajdisco.github.io/baker' },
             { name: 'The Future', url: 'https://ajdisco.github.io/future' },
