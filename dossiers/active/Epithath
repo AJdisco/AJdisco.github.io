@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCP Personnel File</title>
+  <link rel="stylesheet" href="profilecss.css">
+</head>
+<body>
+  <h1>Personnel File: Patryk Mcclean</h1>
+  <div class="personnel-file">
+
+      <div class="personnel-image">
+      <img src="" alt="Dr. Elias Ward">
+    </div>
+
+    <div>
+    <table>
+      <tr>
+        <th class="key-label">ID</th>
+        <td class="key-value">275-O5</td>
+      </tr>
+       <tr>
+        <th class="key-label">Codenames</th>
+        <td class="key-value"> 'The Epitaph' / 'Dennid'</td>
+      </tr>
+      <tr>
+        <th class="key-label">Position</th>
+        <td class="key-value">Council member, O5 Council</td>
+      </tr>
+      <tr>
+        <th class="key-label">Security Clearance</th>
+        <td class="key-value">Level 5</td>
+      </tr>
+      <tr>
+        <th class="key-label">Date of Birth</th>
+        <td class="key-value">1898 02 16</td>
+      </tr>
+      <tr>
+        <th class="key-label">Assigned Site</th>
+        <td class="key-value">Site-██</td>
+      </tr>
+      <tr>
+        <th class="key-label">Specialization</th>
+        <td class="key-value">Groups of Interest, Diplomacy</td>
+      </tr>
+      <tr>
+        <th class="key-label">Experience</th>
+        <td class="key-value"> Intelligence Officer Irish War of Independence 1919-1921 | Foundation intelligence Operative 1925 - 1960 | Foundation Ambassador 1960-1964</td>
+      </tr>
+      <tr>
+        <th class="key-label">Notable Contributions</th>
+        <td class="key-value">Joint Task Force E-10 | Conflict Resolutions with multiple GOI's prior to reassignment as Overseer</td>
+      </tr>
+      <tr>
+        <th class="key-label">Behavioral Notes</th>
+        <td class="key-value">Alcoholic, Quick to anger</td>
+      </tr>
+      <tr>
+        <th class="key-label">Current Assignment</th>
+        <td class="key-value">████████</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+<div class="warning-text">
+  Warning
+</div>
+<div class="warning-subtext">
+  Level 5 clearance, Unauthorised Access will result in termination.
+</div>
+  <!-- Return Button -->
+<div class="button-container">
+  <a href="https://ajdisco.github.io/hub.html" class="return-button">Return to Dossiers</a>
+  <a href="https://ajdisco.github.io/dossiers/active/backstories/lawbreakerbs.html" class="return-button">Biography</a>
+</div>
+</body>
+</html>
