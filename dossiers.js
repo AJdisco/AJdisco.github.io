@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // In a real scenario, you might fetch from a server or local directory
         const files = [
             { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
-            { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/active/lawbreaker' },
+            { name: 'The ', url: 'https://ajdisco.github.io/dossiers/' },
             { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
-            { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/active/Epitaph' },
+            { name: 'The The Consigliere', url: 'https://ajdisco.github.io/dossiers/' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
             { name: 'The Baker', url: 'https://ajdisco.github.io/baker' },
             { name: 'The Future', url: 'https://ajdisco.github.io/future' },
