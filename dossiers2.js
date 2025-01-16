@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const potentialCandidates = [
         { name: 'The Cosmos', url: 'https://ajdisco.github.io/Cosmos' },
         { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' },
-        { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/incative-deceased/lawbreaker.html' },
-         { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html'}
+        { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/lawbreaker.html' },
+        { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' }
     ];
 
     const deceased = [
@@ -19,32 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const potentialSection = document.createElement('div');
     const deceasedSection = document.createElement('div');
 
- files.forEach((file, index) => {
-            console.log('Index:', index);  // Check if the index is defined here
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            
-            a.textContent = file.name;
-            a.href = file.url;
-
-            // Add class for hover effect, only for invalid links
-            if (file.name === 'The Lawbreaker' || file.name === 'The Epitath') {
-                // If it's a valid link, no hover effect
-                a.classList.add('valid-link'); 
-            } else {
-                a.classList.add('access-denied-link'); // For "access denied" effect
-            }
-
-            li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
-            
-            li.appendChild(a);
-            ul.appendChild(li);
-
-            if (index === 0) {
-                li.style.fontSize = '1.5em'; // Larger font size
-                li.style.fontWeight = 'bold'; // Bold text
-            }
-        });
     // Create headings
     const potentialHeading = document.createElement('h2');
     potentialHeading.textContent = 'Potential Candidates';
@@ -65,7 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         a.textContent = candidate.name;
         a.href = candidate.url;
         a.target = '_blank';
-        a.classList.add('access-denied-link'); // Add class for hover effect
+
+        // Add hover effect only for invalid links
+        if (candidate.name === 'The Lawbreaker' || candidate.name === 'The Epitath') {
+            a.classList.add('valid-link'); // Valid links
+        } else {
+            a.classList.add('access-denied-link'); // Invalid links
+        }
+
+        // Save the original text for hover restoration
+        a.setAttribute('data-original-text', candidate.name);
+
         li.appendChild(a);
         potentialList.appendChild(li);
     });
@@ -77,7 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
         a.textContent = person.name;
         a.href = person.url;
         a.target = '_blank';
-        a.classList.add('access-denied-link'); // Add class for hover effect
+
+        // All links in "Deceased" are considered invalid
+        a.classList.add('access-denied-link');
+
+        // Save the original text for hover restoration
+        a.setAttribute('data-original-text', person.name);
+
         li.appendChild(a);
         deceasedList.appendChild(li);
     });
@@ -90,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dossierList2.appendChild(potentialSection);
     dossierList2.appendChild(deceasedSection);
 
-    // Add event listener for hover effect on links
+    // Add event listener for hover effect on invalid links
     document.querySelectorAll('.access-denied-link').forEach(link => {
         link.addEventListener('mouseover', function() {
             // Change the text when hovering
@@ -103,8 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
             this.textContent = this.getAttribute('data-original-text');
             this.classList.remove('access-denied');
         });
-
-        // Save the original text for later restoration
-        link.setAttribute('data-original-text', link.textContent);
     });
 });
