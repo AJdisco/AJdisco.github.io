@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Data for Potential candidates and Deceased
     const potentialCandidates = [
         { name: 'The Cosmos', url: 'https://ajdisco.github.io/Cosmos' },
-        { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' }
-    ];
+        { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' },
+        { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/incative-deceased/lawbreaker.html' },
+         { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html'}    ];
 
     const deceased = [
         { name: 'The Phylanx', url: 'https://ajdisco.github.io/phylanx' },
