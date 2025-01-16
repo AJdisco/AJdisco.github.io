@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Data for Potential candidates and Deceased
     const potentialCandidates = [
         { name: 'The Cosmos', url: 'https://ajdisco.github.io/Cosmos' },
-        { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' },
-        { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/lawbreaker.html' },
-        { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' }
+        { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' }
     ];
 
     const deceased = [
-        { name: 'The Phylanx', url: 'https://ajdisco.github.io/phylanx' },
-        { name: 'The Tiebreaker', url: 'https://ajdisco.github.io/Tiebreaker' }
+        { name: 'The Tiebreaker', url: 'https://ajdisco.github.io/Tiebreaker' },
+        { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/lawbreaker.html' },
+        { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' }
     ];
 
     // Select the container for List 2
