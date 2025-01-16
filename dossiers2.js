@@ -18,6 +18,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const potentialSection = document.createElement('div');
     const deceasedSection = document.createElement('div');
 
+       // Add class for hover effect, only for invalid links
+            if (file.name === 'The Lawbreaker' || file.name === 'The Epitath') {
+                // If it's a valid link, no hover effect
+                a.classList.add('valid-link'); 
+            } else {
+                a.classList.add('access-denied-link'); // For "access denied" effect
+            }
+
+            li.style.animationDelay = `${index * 0.2}s`; // Each item delayed by 0.2 seconds
+            
+            li.appendChild(a);
+            ul.appendChild(li);
+
+            if (index === 0) {
+                li.style.fontSize = '1.5em'; // Larger font size
+                li.style.fontWeight = 'bold'; // Bold text
+            }
+        });
+
     // Create headings
     const potentialHeading = document.createElement('h2');
     potentialHeading.textContent = 'Potential Candidates';
