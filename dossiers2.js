@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'The Cosmos', url: 'https://ajdisco.github.io/Cosmos' },
         { name: 'The Unknown', url: 'https://ajdisco.github.io/Unknown' },
         { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/incative-deceased/lawbreaker.html' },
-         { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html'}    ];
+         { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html'}
+    ];
 
     const deceased = [
         { name: 'The Phylanx', url: 'https://ajdisco.github.io/phylanx' },
@@ -18,7 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const potentialSection = document.createElement('div');
     const deceasedSection = document.createElement('div');
 
-       // Add class for hover effect, only for invalid links
+ files.forEach((file, index) => {
+            console.log('Index:', index);  // Check if the index is defined here
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            
+            a.textContent = file.name;
+            a.href = file.url;
+
+            // Add class for hover effect, only for invalid links
             if (file.name === 'The Lawbreaker' || file.name === 'The Epitath') {
                 // If it's a valid link, no hover effect
                 a.classList.add('valid-link'); 
@@ -36,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.style.fontWeight = 'bold'; // Bold text
             }
         });
-
     // Create headings
     const potentialHeading = document.createElement('h2');
     potentialHeading.textContent = 'Potential Candidates';
