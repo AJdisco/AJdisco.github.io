@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // In a real scenario, you might fetch from a server or local directory
         const files = [
             { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
-            { name: 'The ', url: 'https://ajdisco.github.io/dossiers/' },
+            { name: 'The Weaver ', url: 'https://ajdisco.github.io/dossiers/active/weaver.html' },
             { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
             { name: 'The The Consigliere', url: 'https://ajdisco.github.io/dossiers/' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             a.href = file.url;
 
             // Add class for hover effect, only for invalid links
-            if (file.name === 'The Lawbreaker' || file.name === 'The Epitath') {
+            if (file.name === 'The Weaver' || file.name === 'The Epitath') {
                 // If it's a valid link, no hover effect
                 a.classList.add('valid-link'); 
             } else {
