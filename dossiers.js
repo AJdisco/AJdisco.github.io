@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // In a real scenario, you might fetch from a server or local directory
         const files = [
             { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
-            { name: 'The Weaver ', url: 'https://ajdisco.github.io/dossiers/active/weaver.html' },
+            { name: 'The Weaver', url: 'https://ajdisco.github.io/dossiers/active/weaver.html' },
             { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
             { name: 'The The Consigliere', url: 'https://ajdisco.github.io/dossiers/' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
