@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const deceased = [
         { name: 'The Tiebreaker', url: 'https://ajdisco.github.io/Tiebreaker' },
         { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/lawbreaker.html' },
-        { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' }
+        { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' },
+        { name: 'The Humanitarian', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/humanitarian.html'}
     ];
 
     // Select the container for List 2
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         a.target = '_blank';
 
         // Add hover effect only for invalid links
-        if (candidate.name === 'The Lawbreaker' || candidate.name === 'The Epitath') {
+        if (candidate.name === 'The Lawbreaker' || candidate.name === 'The Epitath' || candidate.name === 'The Humanitarian') {
             a.classList.add('valid-link'); // Valid links
         } else {
             a.classList.add('access-denied-link'); // Invalid links
