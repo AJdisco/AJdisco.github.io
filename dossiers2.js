@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'The Tiebreaker', url: 'https://ajdisco.github.io/Tiebreaker' },
         { name: 'The Lawbreaker', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/lawbreaker.html' },
         { name: 'The Epitath', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/Epitaph.html' },
-        { name: 'The Humanitarian', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/humanitarian.html'}
+        { name: 'The Humanitarian', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/humanitarian.html'},
+        { name: 'The Obstinate', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/humanitarian.html'},
+         { name: 'The Chimera', url: 'https://ajdisco.github.io/dossiers/inactive-deceased/humanitarian.html'},
+        
     ];
 
     // Select the container for List 2
