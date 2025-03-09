@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulated example: Fetching the list of files
         // In a real scenario, you might fetch from a server or local directory
         const files = [
-            { name: 'The Chimera', url: 'https://ajdisco.github.io/Chimera' },
+            { name: 'The Consigliere', url: 'https://ajdisco.github.io/Consigliere' },
             { name: 'The Weaver', url: 'https://ajdisco.github.io/dossiers/active/weaver.html' },
-            { name: 'The Obstinate', url: 'https://ajdisco.github.io/obstinate' },
+            { name: 'The Vaccant', url: 'https://ajdisco.github.io/obstinate' },
             { name: 'The Consigliere', url: 'https://ajdisco.github.io/dossiers/' },
             { name: 'The Illusion', url: 'https://ajdisco.github.io/illusion' },
-            { name: 'The Baker', url: 'https://ajdisco.github.io/baker' },
+            { name: 'The Vaccant', url: 'https://ajdisco.github.io/baker' },
             { name: 'The Future', url: 'https://ajdisco.github.io/future' },
             { name: 'The Protectorate', url: 'https://ajdisco.github.io/protectorate' },
             { name: 'The Misdirected', url: 'https://ajdisco.github.io/misdirected' },
